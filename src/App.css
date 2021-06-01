@@ -8,24 +8,25 @@
   height: 40vmin;
   pointer-events: none;
 }
-.empls_sections{
+.empls_sections {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
-.empls_name{
+.empls_name {
   font-weight: 600;
   color: blue;
 }
-.bday{
+.bday {
   border-left: 1px solid black;
 }
-.empls_header, .bday_header{
+.empls_header,
+.bday_header {
   font-weight: 600;
 }
-.bday_month{
+.bday_month {
   font-weight: 500;
 }
-label{
+label {
   display: block;
 }
 

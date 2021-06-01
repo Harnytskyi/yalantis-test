@@ -1,9 +1,8 @@
-
-export function loadEmployeesData(){
-    const url = "https://yalantis-react-school-api.yalantis.com/api/task0/users";
-    return fetch(url)
-      .then((data) => data.json())
-      .then(data => data)
+export function loadEmployeesData() {
+  const url = "https://yalantis-react-school-api.yalantis.com/api/task0/users";
+  return fetch(url)
+    .then((data) => data.json())
+    .then((data) => data);
 }
 
 export const months = [

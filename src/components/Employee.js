@@ -37,20 +37,17 @@ const Employees = ({ data, checkedHandler }) => {
   };
 
   const createSections = () => {
-    let content =[];
-    for(let i = 65; i<=90; i++){
-        let letter = String.fromCharCode(i);
-        
-        const letterSection = data.filter((item) => item.lastName[0] === letter);
-        content.push (
-          <div className="empls_section" key={letter}>
-            <div className="empls_letter">{letter}</div>
-            <div className="empls_item">
-              {createSectionItem(letterSection)}
-            </div>
-          </div>
-        );
-        
+    let content = [];
+    for (let i = 65; i <= 90; i++) {
+      let letter = String.fromCharCode(i);
+
+      const letterSection = data.filter((item) => item.lastName[0] === letter);
+      content.push(
+        <div className="empls_section" key={letter}>
+          <div className="empls_letter">{letter}</div>
+          <div className="empls_item">{createSectionItem(letterSection)}</div>
+        </div>
+      );
     }
     return content;
   };
