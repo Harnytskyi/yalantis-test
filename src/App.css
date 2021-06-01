@@ -1,10 +1,32 @@
 .App {
   text-align: center;
+  grid-template-columns: 3fr 1fr;
+  display: grid;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.empls_sections{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.empls_name{
+  font-weight: 600;
+  color: blue;
+}
+.bday{
+  border-left: 1px solid black;
+}
+.empls_header, .bday_header{
+  font-weight: 600;
+}
+.bday_month{
+  font-weight: 500;
+}
+label{
+  display: block;
 }
 
 @media (prefers-reduced-motion: no-preference) {
